@@ -1,0 +1,9 @@
+# Site settings
+title: 'Felix Wang' #Strange Case' # Your Title
+tagline: 'The beautiful thing flies' #'Twisted tales to make you shudder' # A brief tagline for your site
+sidebar_image: /images/felix_grey.gif
+
+# Build settings
+markdown: redcarpet
+highlighter: pygments
+baseurl: # the subpath of your site, e.g. /blog/

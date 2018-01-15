@@ -1,0 +1,72 @@
+---
+layout: default
+---
+<body style="background-color: black;">
+
+<header id="home-header" style="background-image: url({{ site.baseurl }}{{ site.sidebar_image }});" >
+  <div class="container" >
+    <h1>{{ site.title }}</h1>
+    <ul class="meta">
+      <li>
+        <span>
+          {{ site.tagline }}
+        </span>
+      </li>
+  </div>
+</header>
+
+<article>
+    <div class="container" >
+        <!-- <h1 style="color:white"></h1> -->
+        <p></p>
+        <p>Hi- welcome to my portfolio page!</p>
+        <p></p>
+        <p>I am a <span style="color:gold">Master of Robotics</span> student at Northwestern University.</p>
+        <p></p>
+        <p>My study has been focusing on two tracks: machine learning and robotics. </p>
+        <p></p>
+        <p>I hope to use <span style="color:gold">reinforcement learning</span> as the framework to bring intelligence to robots.</p>
+        <p></p>
+        <p>I was born in Wuhan, China and have since lived in Singapore and UK. I now live in the US.</p>
+        <p></p>
+        <p>More information can be found in my <span style="color:gold">resume</span>, and if you have any question, feel free to <span style="color:gold">reach out</span>.</p>
+        <h2 style="color:black">placeholder </h2>
+
+        <p> </p>
+        <p> </p>
+
+        <!-- <h1 style="color:white">meets objective attractness</h1> -->
+        <img src="images/brain.jpg" class="hover-image" alt="Machine Learning" style="width:500px;height:270px; border-radius: 1%;">
+        <img src="images/swarm.jpg" class="hover-image" alt="Machine Learning" style="width:500px;height:270px; border-radius: 1%;">
+        <h2></h2>
+        <img src="images/sawyer.jpg" class="hover-image" alt="Robotics" style="width:500px;height:270px; border-radius: 1%;">
+        <img src="images/dwg.jpg" class="hover-image" alt="Machine Learning" style="width:500px;height:270px; border-radius: 1%;">
+        <h2></h2>
+        <img src="images/mnist.png" class="hover-image" alt="Machine Learning" style="width:330px;height:330px; border-radius: 1%;">
+        <img src="images/quad.jpg" class="hover-image" alt="Machine Learning" style="width:330px;height:330px; border-radius: 1%;">
+        <img src="images/rrt.jpg" class="hover-image" alt="Machine Learning" style="width:330px;height:330px; border-radius: 1%;">
+
+
+
+        <!-- <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p> -->
+        <!-- <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a> -->
+    </div>
+</article>
+
+<!-- <article>
+  <div class="container" style="background-color:black">
+    <ul class="posts" style="background-color:black">
+      {% for post in site.posts %}
+        <li>
+          <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+          <span class="meta">
+            {{ post.date | date_to_string }}
+          </span>
+          {{ post.excerpt }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article> -->
+
+</body>
