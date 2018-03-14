@@ -170,7 +170,7 @@ header {
   position: relative;
   width: 35%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -185,7 +185,7 @@ header {
     width: 100%;
   }
   header {
-    height: auto;
+    height: 100%;
   }
 }
 
