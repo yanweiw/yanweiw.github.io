@@ -25,7 +25,8 @@ body {
 
 h1,
 h2,
-p {
+p,
+span {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -51,6 +52,13 @@ p {
   /*color: #666;*/
   color: gainsboro;
   /*font-style: italic;*/
+  padding-left: 20px
+}
+
+span {
+  font-weight: 600;
+  font-size: 15px;
+  color: gainsboro;
 }
 
 blockquote {
@@ -86,11 +94,21 @@ article {
   width: 100%;
 }
 
-.img-container{
+.img-container-ml,
+.img-container-robot {
   padding: 20px 20px;
   position: relative;
   width: relative;
   float: left;
+}
+
+
+.ml-hover:hover ~ .img-container-ml {
+    background-color: gold
+}
+
+.robot-hover:hover ~ .img-container-robot {
+    background-color: gold
 }
 
 .hover-image {
@@ -113,11 +131,19 @@ article {
   -ms-transform: translate(-50%, -50%)
 }
 
-.img-container:hover .hover-image{
+.img-container-ml:hover .hover-image{
   opacity: 0.3;
 }
 
-.img-container:hover .middle {
+.img-container-ml:hover .middle {
+  opacity: 1;
+}
+
+.img-container-robot:hover .hover-image{
+  opacity: 0.3;
+}
+
+.img-container-robot:hover .middle {
   opacity: 1;
 }
 
