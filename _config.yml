@@ -5,5 +5,5 @@ sidebar_image: /images/felix_grey.gif
 
 # Build settings
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 baseurl: # the subpath of your site, e.g. /blog/

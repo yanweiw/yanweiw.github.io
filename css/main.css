@@ -61,6 +61,7 @@ span {
   color: gainsboro;
 }
 
+
 blockquote {
   border-left: 5px solid #ddd;
   margin: 40px 1em;
@@ -152,6 +153,7 @@ article {
   color: white;
   font-size: 24px;
   padding: 16px 32px;
+  font-family: 'Open Sans', sans-serif;
   /*position: relative;*/
 }
 
