@@ -368,8 +368,20 @@ header ul.meta li span {
 
 /* Article */
 
+/* Make Scroll Bar Transparent */
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+}
+
 article {
-  width: 65%;
+  /* width: 65%; */
+  width: 1000px;
   overflow-x: hidden;
 }
 
