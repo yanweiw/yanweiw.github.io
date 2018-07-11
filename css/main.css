@@ -375,13 +375,13 @@ header ul.meta li span {
 }
 ::-webkit-scrollbar-track-piece
 {
-    background-color: black;
-    -webkit-border-radius: 6px;
+    background-color: transparent;
+    -webkit-border-radius: 0px;
 }
 
 article {
   /* width: 65%; */
-  width: 1000px;
+  width: 1200px;
   overflow-x: hidden;
 }
 
