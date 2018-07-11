@@ -372,11 +372,12 @@ header ul.meta li span {
 ::-webkit-scrollbar
 {
     width: 0px;
+    background-color: black;
 }
 ::-webkit-scrollbar-track-piece
 {
-    background-color: transparent;
-    -webkit-border-radius: 0px;
+    background-color: black;
+    -webkit-border-radius: 6px;
 }
 
 article {
