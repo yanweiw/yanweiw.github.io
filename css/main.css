@@ -375,7 +375,7 @@ header ul.meta li span {
 }
 ::-webkit-scrollbar-track-piece
 {
-    background-color: transparent;
+    background-color: black;
     -webkit-border-radius: 6px;
 }
 
