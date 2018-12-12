@@ -112,6 +112,10 @@ article {
     background-color: gold
 }
 
+.top-hover:hover ~ .img-container-top {
+    background-color: gold
+}
+
 .hover-image {
   position: relative;
   opacity: 1;
