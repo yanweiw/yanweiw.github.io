@@ -1,161 +1,239 @@
----
-layout: default
----
-<body style="background-color: black;">
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<header id="home-header" style="background-image: url({{ site.baseurl }}{{ site.sidebar_image }});" >
+  <title>Felix Yanwei Wang</title>
+  
+  <meta name="author" content="Felix Yanwei Wang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
 
-  <div class="container" >
-    <h1>{{ site.title }}</h1>
-    <ul class="meta">
-      <li>
-        <span>
-          {{ site.tagline }}
-        </span>
-      </li>
-  </div>
-</header>
-
-<article>
-    <div class="container" >
-
-      <!-- <p style="padding-top:20px;"></p> -->
-      <p>Welcome to my portfolio page! I am part of
-        <a href="http://www.mccormick.northwestern.edu/robotics/meet-students/profiles-2017-2018/wang-felix.html" style="color:gold">
-          <span style="color:gold">MSR program</span></a> at Northwestern University.
-          <a href="https://github.com/yanweiw/yanweiw.github.io/blob/master/Felix_Resume.pdf" style="color:gold">
-            <span style="color:gold">Resume</span></a>
-             & <a href="mailto:felixwang@u.northwestern.edu" style="color:gold"><span style="color:gold">Email</span></a>
-             <!-- & <a href="https://www.linkedin.com/in/felix-yanwei-wang-07a34778" style="color:gold"><span style="color:gold">LinkedIn</span></a> -->
-             .</p>
-
-      <p> Projects listed here are arranged in the following two topics: </p>
-      <span style="padding-left:20px;color:gold" class="ml-hover">Machine Learning</span>
-      <span>and </span>
-      <span style="color:gold" class="robot-hover">Robotics</span>
-      <p></p>
-      <span style="padding-left:20px;color:gold" class="top-hover">Top Three Projects</span>
-      <p></p>
-
-
-      <div class="img-container-ml img-container-top" >
-        <a href="https://github.com/yanweiw/dqnActiveWhisking">
-          <img src="images/rat.png" class="hover-image" alt="Machine Learning" style="width:240px;height:240px;">
-          <div class="middle">
-            <div class="text">Deep Q-Learning for Active Whisking</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="img-container-ml img-container-top" >
-        <a href="https://github.com/yanweiw/infotaxis">
-          <img src="images/info_dark.png" class="hover-image" alt="Machine Learning" style="width:240px;height:240px;">
-          <div class="middle">
-            <div class="text">Information-Based Search</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- <div class="img-container-ml" >
-        <a href="https://github.com/yanweiw/ergodic">
-          <img src="images/ergo_dark.png" class="hover-image" alt="Machine Learning" style="width:240px;height:240px;">
-          <div class="middle">
-            <div class="text">Active Learning: Ergodic Exploration</div>
-          </div>
-        </a>
-      </div> -->
-
-      <div class="img-container-ml" >
-        <a href="https://github.com/yanweiw/LIVnet">
-          <img src="images/ethnic.png" class="hover-image" alt="Machine Learning" style="width:240px;height:240px">
-          <div class="middle">
-            <div class="text">Transfer Learning with VGG-Face</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- <div class="img-container-ml" >
-        <a href="https://github.com/yanweiw/multiclassSVM">
-          <img src="images/mnist.png" class="hover-image" alt="Machine Learning" style="width:240px;height:240px">
-          <div class="middle">
-            <div class="text">MNIST with Multiclass SVM</div>
-          </div>
-        </a>
-      </div> -->
-
-      <div class="img-container-robot img-container-top" >
-        <a href="https://github.com/yanweiw/picco">
-          <img src="images/starfish.png" class="hover-image" alt="Robotics" style="width:240px;height:240px;">
-          <div class="middle">
-            <div class="text">Swarm Robotics</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="img-container-robot" >
-        <a href="https://github.com/yanweiw/sawyer_beer">
-          <img src="images/sawyer.png" class="hover-image" alt="Robotics" style="width:240px;height:240px;">
-          <div class="middle">
-            <div class="text">Sawyer Manipulation with ROS</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="img-container-robot" >
-        <a href="https://github.com/yanweiw/dwg">
-          <img src="images/dwg-crop.jpg" class="hover-image" alt="Robotics" style="width:240px;height:240px;">
-          <div class="middle">
-            <div class="text">Dual Wing Generator</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="img-container-robot" >
-        <a href="https://github.com/yanweiw/N_rrt">
-          <img src="images/rrt.png" class="hover-image" alt="Robotics" style="width:240px;height:240px;">
-          <div class="middle">
-            <div class="text">RRT</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="img-container-robot" >
-        <a href="https://github.com/yanweiw/quad_SE3">
-          <img src="images/quad.png" class="hover-image" alt="Robotics" style="width:240px;height:240px;">
-          <div class="middle">
-            <div class="text">Quadrotor Dynamics</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="img-container-robot" >
-        <a href="https://github.com/willshw/lane-detection">
-          <img src="images/lane.png" class="hover-image" alt="Robotics" style="width:240px;height:240px;">
-          <div class="middle">
-            <div class="text">Self-Driving: Lane Detection</div>
-          </div>
-        </a>
-      </div>
-
-  </div>
-</article>
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Felix Yanwei Wang</name>
+              </p>
+              <p>I am an EECS PhD student at MIT CSAIL, working with <a href="http://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a> on machine learning and robotics.
+              </p>
+              <p>
+                Before MIT, I did my MS in Robotics at Northestern University, where I worked with<a href="https://robotics.northwestern.edu/people/profiles/faculty/murphey-todd.html">Todd Murphey</a> and <a href="https://robotics.northwestern.edu/people/profiles/faculty/hartmann-mitra.html">Mitra Hartmann</a> on active sensing and information acquisition. I completed my undergraduate degree in physics at Middlebury College with <a href="https://www.middlebury.edu/institute/people/richard-wolfson">Richard Wolfson</a>. 
+              </p>
+              <p> <a href="mailto:felixw@mit.edu">Email</a> </p>
+              <p style="text-align:center">
+                <!-- <a href="mailto:felixw@mit.edu">Email</a> &nbsp/&nbsp -->
+                <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
+                <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
+                <!-- <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Google Scholar</a> &nbsp/&nbsp -->
+                <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp/&nbsp -->
+                <!-- <a href="https://github.com/jonbarron/">Github</a> -->
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/felix.jpg"><img style="width:80%;max-width:100%" alt="profile photo" src="images/felix.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I'm interested in leveraging machine learning to make robots do cool stuff in unstructured environments. 
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
 
-<!-- <article>
-  <div class="container" style="background-color:black">
-    <ul class="posts" style="background-color:black">
-      {% for post in site.posts %}
-        <li>
-          <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-          <span class="meta">
-            {{ post.date | date_to_string }}
-          </span>
-          {{ post.excerpt }}
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</article> -->
 
+          <tr onmouseout="noise2ptz_stop()" onmouseover="noise2ptz_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='noise2ptz_image'>
+                  <img src='images/noise2ptz.png' width="160"></div>
+                <img src='images/noise2ptz.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function noise2ptz_start() {
+                  document.getElementById('noise2ptz_image').style.opacity = "1";
+                }
+
+                function nerfactor_stop() {
+                  document.getElementById('noise2ptz_image').style.opacity = "0";
+                }
+                noise2ptz_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/yanweiw/noise2ptz">
+              <papertitle>Visual Pre-training for Navigation: What Can We Learn from Noise?</papertitle>
+              </a>
+              <br>
+							<strong>Yanwei Wang</strong>,
+              Pulkit Agrawal
+              <br>
+              <!-- <em>arXiv</em>, 2021  -->
+              <br>
+              <a href="http://people.csail.mit.edu/felixw/noise2ptz/assets/noise2ptz.pdf">pdf</a>
+              <!-- / -->
+              <!-- <a href="https://arxiv.org/abs/2106.01970">arXiv</a> -->
+              <!-- / -->
+              <!-- <a href="https://www.youtube.com/watch?v=UUVSPJlwhPg">video</a> -->
+              <p></p>
+              <p>By learning how to pan, tilt and zoom its camera to focus on random crops of a noise image, a robot can pick up navigation skills in realistically simulated environments.</p>
+            </td>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='active_whisking_image'>
+                  <img src='images/rat.png' width="160"></div>
+                <img src='images/rat.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/yanweiw/dqnActiveWhisking">
+              <papertitle>Deep Q-Learning for Active Sensing</papertitle>
+              </a>
+              <br>
+              <strong>Yanwei Wang</strong>,
+              Mitra Hartmann
+              <p></p>
+              <p>This research project studies how active sensing, i.e. choosing what data to collect, can improve data efficiency for decision making under uncertainty. Inspired by the active whisking behavior of rats, we use simulated rat whisker sensory signals as a model for spatial-temporal data to learn policies that first collect observations and then classify object shapes.</p>
+            </td>          
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='info_search_image'>
+                  <img src='images/info.png' width="160" height="160"></div>
+                <img src='images/info.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/yanweiw/infotaxis">
+              <papertitle>Infomation Gain Methods for Object Search</papertitle>
+              </a>
+              <br>
+              <strong>Yanwei Wang</strong>,
+              Todd Murphey
+              <p></p>
+              <p>This research project studies the application of two information gain methods in a search problem: 1. Infotaxis - search guided by entropy minimization 2. Ergodic exploration - search guided by proportional coverage.</p>
+            </td>         
+
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/starfish.png' width="160" height="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/yanweiw/picco">
+              <papertitle>Swarm Robotics</papertitle>
+              </a>
+              <br>
+              <strong>Yanwei Wang</strong>,
+              Michael Rubinstein
+              <p></p>
+              <p>This research project studies multi-agent distributed algorithms concerning coordination, segregation and locomotion, with a hardward implementation of robust localization with cheap sensor on a low cost underactuated system.</p>
+            </td>    
+
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/dwg-crop.jpg' width="160" height="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/yanweiw/dwg">
+              <papertitle>Dual Wing Generator</papertitle>
+              </a>
+              <br>
+              <strong>Yanwei Wang</strong>,
+              Richard Wolfson
+              <br>
+              <br>
+              <a href="https://github.com/yanweiw/dwg/blob/master/felix_thesis.pdf">pdf</a>
+              <p></p>
+              <p>For my undergraduate physics thesis at Middlebury College, I did a computational fluid dynamics (CFD) simulation of Festo's Dual-Wing generator using COMSOL CFD package.</p>
+            </td>                          
+
+
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Projects</heading>
+              <p>
+                Miscellaneous class projects with robots.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/sawyer.png' width="160" height="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/yanweiw/sawyer_beer">
+              <papertitle>Robot Manipulation with ROS</papertitle>
+              </a>
+            </td>         
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/quad.png' width="160" height="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/yanweiw/quad_SE3">
+              <papertitle>Simulating Quadrotor Dynamics on SE(3) Manifold</papertitle>
+              </a>
+            </td>           
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/lane.png' width="160" height="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/willshw/lane-detection">
+              <papertitle>Lane Detection for Self-Driving Applications</papertitle>
+              </a>
+            </td>                          
+
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                <a href="https://jonbarron.info/">Template</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
 </body>
+
+</html>
