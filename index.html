@@ -54,6 +54,46 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+          <tr onmouseout="tli_stop()" onmouseover="tli_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='tli_image'>
+<!--                   <video width="320" height="240" controls>
+                    <source type="video/mp4" src="https://robocop79.github.io/Websiteland//Twitter/FLT.mp4">
+                  </video> -->
+                  <img src='images/robot_1.pdf' width="160"></div>
+                <img src='images/robot_1.pdf' width="160">
+              </div>
+              <script type="text/javascript">
+                function tli_start() {
+                  document.getElementById('tli_image').style.opacity = "1";
+                }
+
+                function tli_stop() {
+                  document.getElementById('tli_image').style.opacity = "0";
+                }
+                tli_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sites.google.com/view/ltl-ds">
+              <papertitle>Temporal Logic Imitation: Learning Plan-Satisficing Motion Policies from Demonstrations</papertitle>
+              </a>
+              <br>
+              <strong>Yanwei Wang</strong>,
+              Nadia Figueroa, Shen Li, Ankit Shah, Julie Shah
+              <br>
+              <!-- <em>arXiv</em>, 2021  -->
+              <br>
+              <a href="https://arxiv.org/abs/2206.04632">arxiv</a>
+              <a href="https://sites.google.com/view/ltl-ds">videos</a>
+              <!-- / -->
+              <!-- <a href="https://arxiv.org/abs/2106.01970">arXiv</a> -->
+              <!-- / -->
+              <!-- <a href="https://www.youtube.com/watch?v=UUVSPJlwhPg">video</a> -->
+              <p></p>
+              <p>We present a continuous motion imitation method that can provably satisfy any discrete plan specified by a Linear Temporal Logic (LTL) formula. Consequently, the imitator is robust to both task- and motion-level disturbances and guaranteed to achieve task success.</p>
+            </td>
 
 
           <tr onmouseout="noise2ptz_stop()" onmouseover="noise2ptz_start()">
