@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Felix Yanwei Wang</name>
               </p>
-              <p>I am an EECS PhD student at MIT, working with <a href="https://interactive.mit.edu/about/people/julie">Julie Shah</a> on learning from human demonstrations.
+              <p>I am an EECS PhD student at MIT, working with <a href="https://interactive.mit.edu/about/people/julie">Julie Shah</a> on learning from human-AI interaction.
                 <!-- In the past, I worked with <a href="http://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a> on visual navigation. -->
               </p>
               <p>
@@ -56,14 +56,47 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in <strong>human robot </strong>(or any AI system) <strong>interaction</strong>--especially how we can leverage past interaction data to personalize and robustify future robot executions under adversarial perturbations.
-                My PhD work applies continuous motion imitation to long-horizon manipulation tasks with discrete structures, a.k.a. <strong>interactive task and motion imitation</strong>.       
+                I'm interested in <strong>human robot </strong>(or any AI system such as LLM) <strong>interaction</strong>--for example, how we can leverage past interaction data to personalize and robustify future robot executions under adversarial perturbations.
+                My PhD work applies continuous motion imitation to long-horizon manipulation tasks with discrete structures, aka <strong>interactive task and motion imitation</strong>.       
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/tracing.png' width="160">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://openreview.net/forum?id=qoHeuRAcSl">
+              <papertitle>Grounding Language Plans in Demonstrations through Counter-factual Perturbations</papertitle>
+            </a>
+            <br>
+            <strong>Yanwei Wang</strong>,
+            Tsun-Hsuan Wang, 
+            Jiayuan Mao,
+            Michael Hagenow,
+            Julie Shah
+            <!-- <br> -->
+            <!-- <em>arXiv</em>, 2021  -->
+            <em><br>
+              <a href="https://openreview.net/forum?id=qoHeuRAcSl">paper</a>
+              /
+              <a href="https://sites.google.com/view/grounding-plans">project page</a>
+              <br>
+              <strong>ICLR 2024</strong> (In submission)
+            </em><br>
+            <p>This work uses LLMs to guide the searching for structures and constraints in manipulation tasks, aka boundaries of mode families. 
+            By locally perturbing a few successful human demonstrations, we augment the dataset with more
+            successful executions and counterfactuals that fail the task. Our explanation-based learning framework trains classifiers 
+            to differentiate success executions from failures and as a by-product learns
+            classifiers that ground continuous states into discrete modes without dense labeling.</p>
+          </td>
 
           <tr onmouseout="tli_stop()" onmouseover="tli_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -110,6 +143,32 @@
               <!-- <a href="https://www.youtube.com/watch?v=UUVSPJlwhPg">video</a> -->
               <!-- <p></p> -->
               <p>We present a continuous motion imitation method that can provably satisfy any discrete plan specified by a Linear Temporal Logic (LTL) formula. Consequently, the imitator is robust to both task- and motion-level disturbances and guaranteed to achieve task success.</p>
+            </td>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/drllama.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2305.07804.pdf">
+                <papertitle>Improving Small Language Models on PubMedQA via Generative Data Augmentation</papertitle>
+              </a>
+              <br>
+              Zhen Guo,
+              <strong>Yanwei Wang</strong>,
+              Peiqi Wang,
+              Shangdi Yu
+              <!-- <br> -->
+              <!-- <em>arXiv</em>, 2021  -->
+              <em><br>
+                <a href="https://arxiv.org/pdf/2305.07804.pdf">arxiv</a>
+                <br>
+                <strong>KDD 2023</strong> (Foundations and Applications in Large-scale
+                AI Models Pre-training, Fine-tuning, and Prompt-based Learning Workshop)
+              </em><br>
+              <p>We prompt large language models to augment a domain-specific dataset to train specialized small language models that outperform the general-purpose LLM.</p>
             </td>
 
 
