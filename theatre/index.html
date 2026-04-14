@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Theatre – Felix Yanwei Wang</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/MIT_favicon.png">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+        font-family: 'Asap', sans-serif;
+        background-color: #0f0f12;
+        color: #e4e4e7;
+        line-height: 1.5em;
+      }
+
+      .container {
+        max-width: 54em;
+        margin: 0 auto;
+        padding: 4em 0 6em;
+      }
+
+      .back {
+        display: inline-block;
+        color: #6b6b7b;
+        text-decoration: none;
+        margin-bottom: 2em;
+        font-size: 0.9em;
+      }
+
+      .back:hover { color: #e4e4e7; }
+
+      h1 {
+        font-size: 2.4em;
+        font-weight: 500;
+        margin-bottom: 0.3em;
+      }
+
+      .subtitle {
+        color: #6b6b7b;
+        margin-bottom: 3em;
+        font-size: 1.05em;
+      }
+
+      .show {
+        margin-bottom: 3em;
+      }
+
+      .show-header {
+        margin-bottom: 1em;
+      }
+
+      .show-title {
+        font-size: 1.3em;
+        font-weight: 600;
+        color: #e4e4e7;
+      }
+
+      .show-role {
+        color: #daa520;
+        font-style: italic;
+        font-size: 0.95em;
+      }
+
+      .show-meta {
+        color: #6b6b7b;
+        font-size: 0.85em;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .gallery.two-col {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.02);
+      }
+
+      .gallery .wide {
+        grid-column: span 2;
+      }
+
+      .section-year {
+        font-size: 1.6em;
+        font-weight: 500;
+        color: #6b6b7b;
+        margin-bottom: 1.5em;
+        margin-top: 1em;
+      }
+
+      .divider {
+        border: none;
+        border-top: 1px solid #1f1f28;
+        margin: 2em 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <a href="../" class="back">← Back</a>
+
+      <h1>Theatre</h1>
+      <p class="subtitle">Acting credits from Middlebury College and Oxford University.</p>
+
+      <p class="section-year">2016</p>
+
+      <div class="show">
+        <div class="show-header">
+          <div class="show-title">In Perpetuity Throughout the Universe</div>
+          <div class="show-role">Dennis Wu</div>
+          <div class="show-meta">by Eric Overmyer &middot; Middlebury College</div>
+        </div>
+        <div class="gallery" style="grid-template-columns: 1fr 2.25fr;">
+          <img src="iptu02.png" alt="In Perpetuity Throughout the Universe">
+          <img src="iptu01.png" alt="In Perpetuity Throughout the Universe">
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="show">
+        <div class="show-header">
+          <div class="show-title">American Sunrise/Sunset</div>
+          <div class="show-role">Ensemble</div>
+          <div class="show-meta">by Cheryl Faraone &middot; Middlebury College</div>
+        </div>
+        <div class="gallery">
+          <img src="as02.png" alt="American Sunrise/Sunset">
+          <img src="as01.png" class="wide" alt="American Sunrise/Sunset">
+          <img src="as03.png" alt="American Sunrise/Sunset">
+          <img src="as04.png" alt="American Sunrise/Sunset">
+          <img src="as05.png" alt="American Sunrise/Sunset">
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="show">
+        <div class="show-header">
+          <div class="show-title">A Midsummer Night's Dream</div>
+          <div class="show-role">Fairy</div>
+          <div class="show-meta">by William Shakespeare &middot; Middlebury College</div>
+        </div>
+        <div class="gallery two-col" style="margin-bottom: 10px;">
+          <img src="mnd05.png" alt="A Midsummer Night's Dream">
+          <img src="mnd01.png" alt="A Midsummer Night's Dream">
+        </div>
+        <div class="gallery">
+          <img src="mnd02.png" alt="A Midsummer Night's Dream">
+          <img src="mnd03.png" alt="A Midsummer Night's Dream">
+          <img src="mnd04.png" alt="A Midsummer Night's Dream">
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <p class="section-year">2015</p>
+
+      <div class="show">
+        <div class="show-header">
+          <div class="show-title">爱情疯人院</div>
+          <div class="show-role">出演周游</div>
+          <div class="show-meta">Oxford University</div>
+        </div>
+        <div class="gallery two-col">
+          <img src="aqfry01.JPG" alt="爱情疯人院">
+          <img src="aqfry02.JPG" alt="爱情疯人院">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
