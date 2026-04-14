@@ -41,7 +41,7 @@
             <a href="https://drive.google.com/file/d/1z02OqVWLIa_Fq5O_AdcuvqnhztIhZuEj/view?usp=sharing">Defense Talk</a>
             <br><br>
             felix at generalistai dot com
-            <br><br>
+            <br>
           </p>
         </div>
         <div id="intro-image">
@@ -361,6 +361,10 @@
       }
 
       update_isotope();
+
+      $(window).on('load', function() {
+        $grid.isotope('layout');
+      });
 
     </script>
   </body>
