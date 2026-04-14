@@ -346,4 +346,25 @@ h3 a:hover {
   position: absolute;
   bottom: 0;
   line-height: 2.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+}
+
+#footer .footer-globe {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  transform: translateY(1px);
+}
+
+#footer .footer-globe .clstrm_outer {
+  margin: 0 !important;
+  filter: grayscale(1) saturate(0) contrast(1.05);
+}
+
+#footer .footer-globe-fallback {
+  color: #60a5fa;
+  line-height: 1;
+  font-size: 0.9em;
 }
