@@ -201,7 +201,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .preview-item {
@@ -286,7 +286,7 @@ h3 a:hover {
 }
 
 .publication {
-  margin-bottom: 0.5em;
+  margin-bottom: 1.0em;
 }
 
 .publication p {
