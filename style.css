@@ -96,6 +96,7 @@ h1 {
 #intro-text {
   width: 40em;
   float: left;
+  position: relative;
 }
 
 #intro-image {
@@ -336,6 +337,11 @@ h3 a:hover {
 
 .pub-desc.show {
   display: block;
+}
+
+#intro-text .pub-desc.show {
+  display: block;
+  position: absolute;
 }
 
 /**************************************************/
