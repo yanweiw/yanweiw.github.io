@@ -52,9 +52,6 @@ table {
   line-height: 1.5em;
   color: #e4e4e7;
   background-color: #0f0f12;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-size-adjust: 100%;
 }
 
 #main {

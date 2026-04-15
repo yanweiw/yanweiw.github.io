@@ -319,6 +319,12 @@
         var filterValue = $( this ).attr('data-filter');
         localStorage.setItem('filterValue', filterValue);
         $grid.isotope({ filter: filterValue });
+        // Nudge viewport to force mobile text-autosizing recalculation
+        var vp = document.querySelector('meta[name="viewport"]');
+        vp.setAttribute('content', 'width=999');
+        requestAnimationFrame(function() {
+          vp.setAttribute('content', 'width=1000');
+        });
       });
 
       // Change is-checked class on buttons.
