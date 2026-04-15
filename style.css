@@ -342,6 +342,7 @@ h3 a:hover {
 #intro-text .pub-desc.show {
   display: block;
   position: absolute;
+  left: 0;
 }
 
 /**************************************************/
