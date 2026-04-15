@@ -31,7 +31,7 @@
         <div id="intro-text">
           <h1>Felix Yanwei Wang</h1>
           <p>
-            I am a member of technical staff at <a href="https://generalistai.com/">Generalist AI</a>. I graduated from MIT EECS, working with <a href="https://aeroastro.mit.edu/people/julie-shah/">Julie Shah</a> on human robot interaction, specifically, <span id="itps-wrapper"><a onmouseenter="show_explainer()" onclick="toggle_explainer()" style="cursor: pointer;">inference-time policy steering <span class="toggle-hint">(toggle)</span></a>.<span id="itps-explainer">Imagine driving with Google Maps, where multiple routes unfold before you. As you take turns and change plans, it adapts instantly recalculating to match your shifting preferences. <span style="color: #ffffff">My research goal</span> is to bring this level of interactivity to multimodal embodied AI, empowering users to steer pre-trained foundation models without additional training. For explainers, see <a href="https://www.youtube.com/watch?v=Yx1UEdDii5s">Bloomberg News</a> (accessible), <a href="https://cap.csail.mit.edu/engage/spotlights/felix-yanwei-wang?utm_source=linkedin&utm_medium=social&utm_campaign=felixspot">MIT Spotlight</a> (technical), or my <a href="https://arxiv.org/abs/2506.14287">PhD Thesis</a> (most technical).<br><a href="https://drive.google.com/file/d/1z02OqVWLIa_Fq5O_AdcuvqnhztIhZuEj/view?usp=sharing" class="preview-item" style="width: calc((54em - 20px) / 2); display: inline-block; margin-top: 0.4em;"><video id="itps-video" playsinline muted autoplay loop style="width: 100%; border-radius: 5px;"><source src="images/teaser_google_map.mp4" type="video/mp4"></video><span class="preview-overlay" style="font-size: 0.9rem;">PhD defense talk</span></a></span></span> Before MIT, I studied robotics at Northwestern and physics at Middlebury. Outside research, I enjoy <a href="theatre/">theatre</a> and backpacking – I <a href="https://youtu.be/OU6qPbvcKG0">thru-hiked PCT</a> in 2019.
+            I am a member of technical staff at <a href="https://generalistai.com/">Generalist AI</a>. I graduated from MIT EECS, working with <a href="https://aeroastro.mit.edu/people/julie-shah/">Julie Shah</a> on human robot interaction, specifically, <span id="itps-wrapper"><a onmouseenter="show_explainer()" onclick="toggle_explainer()" style="cursor: pointer;">inference-time policy steering <span class="toggle-hint">(toggle)</span></a>.<span id="itps-explainer">Imagine driving with Google Maps, where multiple routes unfold before you. As you take turns and change plans, it adapts instantly recalculating to match your shifting preferences. <span style="color: #ffffff">My research goal</span> is to bring this level of interactivity to multimodal embodied AI, empowering users to steer pre-trained foundation models without additional training. For explainers, see <a href="https://www.youtube.com/watch?v=Yx1UEdDii5s">Bloomberg News</a> (accessible), <a href="https://cap.csail.mit.edu/engage/spotlights/felix-yanwei-wang?utm_source=linkedin&utm_medium=social&utm_campaign=felixspot">MIT Spotlight</a> (technical), or my <a href="https://arxiv.org/abs/2506.14287">PhD Thesis</a> (most technical).<br><a href="https://drive.google.com/file/d/1z02OqVWLIa_Fq5O_AdcuvqnhztIhZuEj/view?usp=sharing" class="preview-item" style="width: 100%; display: inline-block; margin-top: 0.4em;"><video id="itps-video" playsinline muted autoplay loop style="width: 100%; border-radius: 5px;"><source src="images/teaser_google_map.mp4" type="video/mp4"></video><span class="preview-overlay" style="font-size: 0.9rem;">PhD defense talk</span></a></span></span> Before MIT, I studied robotics at Northwestern and physics at Middlebury. Outside research, I enjoy <a href="theatre/">theatre</a> and backpacking – I <a href="https://youtu.be/OU6qPbvcKG0">thru-hiked PCT</a> in 2019.
             <br><br>
             <a onclick="this.nextElementSibling.classList.toggle('show')" style="font-style: normal; cursor: pointer;">Email</a><span class="pub-desc" style="margin-top: 0.2em;">felix at generalistai dot com</span>&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://twitter.com/felixwyw">X (Twitter)</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -321,15 +321,17 @@
         $grid.isotope({ filter: filterValue });
       });
 
-      // Mobile browsers recalculate text autosizing when Isotope shows/hides
-      // elements, producing smaller text than the initial page load. Nudging
-      // the viewport width forces a from-scratch recalculation equivalent to
-      // a refresh, keeping font sizes consistent across tab switches.
+      // Mobile text autosizer recalculates when Isotope shows/hides items,
+      // producing different sizes than on page load. An async viewport nudge
+      // with a real paint cycle in between forces a from-scratch recalculation.
       $grid.on( 'arrangeComplete', function() {
         var vp = document.querySelector('meta[name="viewport"]');
         vp.setAttribute('content', 'width=999');
-        void document.documentElement.offsetHeight;
-        vp.setAttribute('content', 'width=1000');
+        requestAnimationFrame(function() {
+          requestAnimationFrame(function() {
+            vp.setAttribute('content', 'width=1000');
+          });
+        });
       });
 
       // Change is-checked class on buttons.
