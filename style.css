@@ -52,6 +52,9 @@ table {
   line-height: 1.5em;
   color: #e4e4e7;
   background-color: #0f0f12;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 #main {
@@ -205,6 +208,15 @@ h2 {
   margin-bottom: 4em;
 }
 
+.talk-title {
+  color: #8b8b9b;
+}
+
+.list-item.talk.previews {
+  margin-bottom: 2em;
+  margin-left: 3em;
+}
+
 .preview-item {
   position: relative;
   display: block;
@@ -216,7 +228,8 @@ h2 {
   border: none;
 }
 
-.previews video {
+.previews video,
+.previews img {
   width: 100%;
   display: block;
   border-radius: 5px;
