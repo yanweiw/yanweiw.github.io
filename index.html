@@ -17,9 +17,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-    </style>
 
     <link rel="icon" type="image/png" href="images/MIT_favicon.png">
   </head>
@@ -31,9 +28,9 @@
         <div id="intro-text">
           <h1>Felix Yanwei Wang</h1>
           <p>
-            I am a member of technical staff at <a href="https://generalistai.com/">Generalist AI</a>. I graduated from MIT EECS, working with <a href="https://aeroastro.mit.edu/people/julie-shah/">Julie Shah</a> on human robot interaction, specifically, <span id="itps-wrapper"><a onmouseenter="show_explainer()" onclick="toggle_explainer()" style="cursor: pointer;">inference-time policy steering <span class="toggle-hint">(toggle)</span></a>.<span id="itps-explainer">Imagine driving with Google Maps, where multiple routes unfold before you. As you take turns and change plans, it adapts instantly recalculating to match your shifting preferences. <span style="color: #ffffff">My research goal</span> is to bring this level of interactivity to multimodal embodied AI, empowering users to steer pre-trained foundation models without additional training. For explainers, see <a href="https://www.youtube.com/watch?v=Yx1UEdDii5s">Bloomberg News</a> (accessible), <a href="https://cap.csail.mit.edu/engage/spotlights/felix-yanwei-wang?utm_source=linkedin&utm_medium=social&utm_campaign=felixspot">MIT Spotlight</a> (technical), or my <a href="https://arxiv.org/abs/2506.14287">PhD Thesis</a> (most technical).<a href="https://drive.google.com/file/d/1z02OqVWLIa_Fq5O_AdcuvqnhztIhZuEj/view?usp=sharing" class="preview-item" style="width: 100%; display: block; margin-top: 0.8em;"><video id="itps-video" playsinline muted autoplay loop style="width: 100%; border-radius: 5px;"><source src="images/teaser_google_map.mp4" type="video/mp4"></video><span class="preview-overlay" style="font-size: 0.9rem;">PhD defense talk</span></a></span></span> Before MIT, I studied robotics at Northwestern and physics at Middlebury. Outside research, I enjoy <a href="theatre/">theatre</a> and backpacking – I <a href="https://youtu.be/OU6qPbvcKG0">thru-hiked PCT</a> in 2019.
+            I am a member of technical staff at <a href="https://generalistai.com/">Generalist AI</a>. I graduated from MIT EECS, working with <a href="https://aeroastro.mit.edu/people/julie-shah/">Julie Shah</a> on human robot interaction, specifically, <span id="itps-wrapper"><a onmouseenter="show_explainer()" onclick="toggle_explainer()" style="cursor: pointer;">inference-time policy steering <span class="toggle-hint">(toggle)</span></a>.<span id="itps-explainer">Imagine driving with Google Maps, where multiple routes unfold before you. As you take turns and change plans, it adapts instantly recalculating to match your shifting preferences. <span style="color: #ffffff">My research goal</span> is to bring this level of interactivity to multimodal embodied AI, empowering users to steer pre-trained foundation models without additional training. For explainers, see <a href="https://www.youtube.com/watch?v=Yx1UEdDii5s">Bloomberg News</a> (accessible), <a href="https://cap.csail.mit.edu/engage/spotlights/felix-yanwei-wang?utm_source=linkedin&utm_medium=social&utm_campaign=felixspot">MIT Spotlight</a> (technical), or my <a href="https://arxiv.org/abs/2506.14287">PhD Thesis</a> (most technical).<a href="https://www.youtube.com/watch?v=HAMyomJewV8" class="preview-item" style="width: 100%; display: block; margin-top: 0.8em;"><video id="itps-video" playsinline muted autoplay loop style="width: 100%; border-radius: 5px;"><source src="images/teaser_google_map.mp4" type="video/mp4"></video><span class="preview-overlay" style="font-size: 0.9rem;">PhD defense talk</span></a></span></span> Before MIT, I studied robotics at Northwestern and physics at Middlebury. Outside research, I enjoy <a href="theatre/">theatre</a> and backpacking – I <a href="https://youtu.be/OU6qPbvcKG0">thru-hiked PCT</a> in 2019.
             <br><br>
-            <a onclick="this.nextElementSibling.classList.toggle('show')" style="font-style: normal; cursor: pointer;">Email</a><span class="pub-desc" style="margin-top: 0.2em;">felix at generalistai dot com</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a onclick="toggle_desc(this)" style="font-style: normal; cursor: pointer;">Email</a><span class="pub-desc" style="margin-top: 0.2em;">felix at generalistai dot com</span>&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://twitter.com/felixwyw">X (Twitter)</a>&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://scholar.google.com/citations?user=M6HrtLUAAAAJ&hl=en">G. Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://www.linkedin.com/in/felix-yanwei-wang">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -206,7 +203,7 @@
 
         <!-- Talks -->
         <div class="list-item talk previews" data-category="talk">
-          <a href="https://drive.google.com/file/d/1z02OqVWLIa_Fq5O_AdcuvqnhztIhZuEj/view?usp=sharing" class="preview-item"><img src="images/thesis_talk.jpg" alt="PhD Thesis Defense Talk"><div class="preview-overlay">PhD defense talk</div></a>
+          <a href="https://www.youtube.com/watch?v=HAMyomJewV8" class="preview-item"><img src="images/thesis_talk.jpg" alt="PhD Thesis Defense Talk"><div class="preview-overlay">PhD defense talk</div></a>
         </div>
 
         <div class="list-item talk" data-category="talk">
@@ -214,19 +211,19 @@
         </div>
 
         <div class="list-item talk" data-category="talk">
-          <p class="date"></p>Stanford University – <span class="talk-title">"Inference-Time Policy Customization via Interactive Task Specification"</span>
+          <p class="date"></p>Stanford University – <span class="talk-title">"Steering Robots with Inference-Time Interactions"</span>
         </div>
 
         <div class="list-item talk" data-category="talk">
-          <p class="date"></p>Tsinghua University – <span class="talk-title">"Inference-Time Policy Customization via Interactive Task Specification"</span>
+          <p class="date"></p>Tsinghua University – <span class="talk-title">"Steering Robots with Inference-Time Interactions"</span>
         </div>
 
         <div class="list-item talk" data-category="talk">
-          <p class="date">2024</p>MIT <a href="https://ei.csail.mit.edu/seminars.html">EI Seminar</a> – <span class="talk-title">"Inference-Time Policy Customization through Interactive Task Specification"</span>
+          <p class="date">2024</p>MIT <a href="https://ei.csail.mit.edu/seminars.html">EI Seminar</a> – <span class="talk-title">"Inference-Time Policy Customization"</span>
         </div>
 
         <div class="list-item talk" data-category="talk">
-          <p class="date"></p>University of New Hampshire – <span class="talk-title">"Inference-Time Policy Alignment through Human Interactions"</span>
+          <p class="date"></p>University of New Hampshire – <span class="talk-title">"Inference-Time Policy Customization"</span>
         </div>
 
         <div class="list-item talk" data-category="talk">
@@ -252,7 +249,7 @@
         </div>
 
         <div class="list-item misc" data-category="misc">
-          <p class="date"></p><a href="https://news.mit.edu/2024/engineering-household-robots-have-little-common-sense-0325">MIT News</a> and <a href="https://techcrunch.com/2024/03/25/large-language-models-can-help-home-robots-recover-from-errors-without-human-help/">TechCrunch</a> coverage of our ICLR 2024 paper on grounding language plans
+          <p class="date"></p><a href="https://news.mit.edu/2024/engineering-household-robots-have-little-common-sense-0325">MIT News</a> and <a href="https://techcrunch.com/2024/03/25/large-language-models-can-help-home-robots-recover-from-errors-without-human-help/">TechCrunch</a> coverage of our work on grounding language plans
         </div>
 
         <div class="list-item misc" data-category="misc">
@@ -314,10 +311,74 @@
         }
       });
 
+      var filterParamToValue = {
+        highlight: '.highlight',
+        publication: '.publication',
+        talk: '.talk',
+        misc: '.misc'
+      };
+
+      var filterValueToParam = {
+        '.highlight': 'highlight',
+        '.publication': 'publication',
+        '.talk': 'talk',
+        '.misc': 'misc'
+      };
+
+      var activeFilterValue = '.highlight';
+
+      function getSavedFilterValue() {
+        var params = new URLSearchParams(window.location.search);
+        var queryFilterValue = filterParamToValue[params.get('tab')];
+        if (queryFilterValue) {
+          localStorage.setItem('filterValue', queryFilterValue);
+          return queryFilterValue;
+        }
+
+        var storedFilterValue = localStorage.getItem('filterValue');
+        if (filterValueToParam[storedFilterValue]) {
+          return storedFilterValue;
+        }
+
+        return '.highlight';
+      }
+
+      function getFilterUrl(filterValue) {
+        var filterParam = filterValueToParam[filterValue];
+        var url = new URL(window.location.href);
+        if (filterParam && filterParam !== 'highlight') {
+          url.searchParams.set('tab', filterParam);
+        } else {
+          url.searchParams.delete('tab');
+        }
+        return url.toString();
+      }
+
+      function shouldReloadTabsOnMobile() {
+        if (!window.screen) return false;
+        return Math.min(window.screen.width, window.screen.height) < 700;
+      }
+
       // Bind filter button click.
       $('#filters').on( 'click', 'button', function() {
         var filterValue = $( this ).attr('data-filter');
+        if (!filterValue || filterValue === activeFilterValue) {
+          return;
+        }
+
         localStorage.setItem('filterValue', filterValue);
+
+        // A full reload is the only reliable way to make mobile text autosizing
+        // match the "refresh fixes it" behavior when switching Isotope filters.
+        if (shouldReloadTabsOnMobile()) {
+          window.location.replace(getFilterUrl(filterValue));
+          return;
+        }
+
+        activeFilterValue = filterValue;
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, '', getFilterUrl(filterValue));
+        }
         $grid.isotope({ filter: filterValue });
       });
 
@@ -331,10 +392,8 @@
       });
 
       function update_isotope() {
-        var defaultFilterValue = localStorage.getItem('filterValue');
-        if (defaultFilterValue == null) {
-          defaultFilterValue = ".highlight"
-        }
+        var defaultFilterValue = getSavedFilterValue();
+        activeFilterValue = defaultFilterValue;
         $grid.isotope({ filter: defaultFilterValue });
         var buttons = document.getElementsByClassName("button");
         for (var currButton of buttons) {
@@ -355,9 +414,43 @@
         }
       }
 
+      function sync_desc_text_size(el) {
+        var desc = el && el.nextElementSibling;
+        if (!desc) return null;
+
+        var referenceEl = el.closest('p') || el.parentElement;
+        var isGridDesc = !!el.closest('.grid');
+        var isMobileView = shouldReloadTabsOnMobile();
+
+        if (isGridDesc && !isMobileView) {
+          var introExplainer = document.getElementById('itps-explainer');
+          if (introExplainer) {
+            var introStyles = window.getComputedStyle(introExplainer);
+            desc.style.fontSize = introStyles.fontSize;
+            desc.style.lineHeight = introStyles.lineHeight;
+            return desc;
+          }
+        }
+
+        if (referenceEl) {
+          var referenceStyles = window.getComputedStyle(referenceEl);
+          desc.style.fontSize = referenceStyles.fontSize;
+          desc.style.lineHeight = referenceStyles.lineHeight;
+        }
+
+        return desc;
+      }
+
       function toggle_desc(el) {
-        el.nextElementSibling.classList.toggle("show");
-        $grid.isotope('layout');
+        var desc = sync_desc_text_size(el);
+        if (!desc) return;
+
+        var isShown = desc.classList.toggle("show");
+        el.setAttribute('aria-expanded', isShown ? 'true' : 'false');
+
+        if (el.closest('.grid')) {
+          $grid.isotope('layout');
+        }
       }
 
       function show_explainer() {
@@ -369,45 +462,7 @@
         x.style.display = x.style.display === "block" ? "none" : "block";
       }
 
-      // On mobile, the text autosizer inflates text to compensate for the
-      // scaled-down viewport (width=1000 on a ~375px screen). However, when
-      // Isotope dynamically shows/hides items, the autosizer recalculates and
-      // picks different (smaller) sizes. Fix: measure the autosizing factor
-      // the browser naturally applies on page load, then lock it as a fixed
-      // text-size-adjust percentage so it can never change on tab switch.
-      function lockTextSizeAdjust() {
-        var body = document.getElementById('body');
-        var container = document.querySelector('#intro-text');
-        if (!container || !body) return;
-
-        body.style.webkitTextSizeAdjust = 'auto';
-        body.style.textSizeAdjust = 'auto';
-
-        var probe = document.createElement('div');
-        probe.style.cssText = 'position:absolute;left:-9999px;top:-9999px;white-space:nowrap;font-size:16px;';
-        probe.textContent = 'MMMMMMMMMM';
-        container.appendChild(probe);
-        var autoWidth = probe.getBoundingClientRect().width;
-
-        probe.style.webkitTextSizeAdjust = 'none';
-        probe.style.textSizeAdjust = 'none';
-        var noneWidth = probe.getBoundingClientRect().width;
-
-        container.removeChild(probe);
-
-        if (noneWidth > 0 && autoWidth / noneWidth > 1.05) {
-          var factor = Math.round(autoWidth / noneWidth * 100) + '%';
-          body.style.webkitTextSizeAdjust = factor;
-          body.style.textSizeAdjust = factor;
-        }
-      }
-
       update_isotope();
-
-      $(window).on('load', function() {
-        $grid.isotope('layout');
-        requestAnimationFrame(lockTextSizeAdjust);
-      });
 
     </script>
   </body>

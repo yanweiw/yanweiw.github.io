@@ -136,7 +136,6 @@ h2 {
 }
 
 .button {
-  display: inline-block;
   cursor: pointer;
   border: none;
   background: none;
@@ -340,8 +339,8 @@ h3 a:hover {
 .pub-desc {
   display: none;
   color: #daa520;
-  font-size: 0.9em;
-  line-height: 1.4em;
+  font-size: inherit;
+  line-height: inherit;
   margin-top: 0.3em;
 }
 
