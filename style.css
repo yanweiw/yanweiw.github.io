@@ -208,7 +208,8 @@ h2 {
   color: #8b8b9b;
 }
 
-.list-item.talk.previews {
+.list-item.talk.previews,
+.list-item.misc.previews {
   margin-bottom: 2em;
   margin-left: 3em;
 }
